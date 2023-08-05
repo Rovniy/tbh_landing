@@ -1,0 +1,51 @@
+/* Дублирование кода для tablet и tablet-xl необходимо для наследования свойств desktop */
+/* any-hover: [hover, none] указывает на наличие возможности нарисовать курсор мыши  */
+
+/************************* RESPONSIVE **************************/
+@mixin custom($width)
+	@media screen and (min-width: $width) and (any-hover: hover)
+		@content
+	@media screen and (min-width: $width) and (any-hover: none)
+		@content
+
+@mixin mobile-xl // 500px
+	@media screen and (min-width: $mobile-xl) and (any-hover: hover)
+		@content
+	@media screen and (min-width: $mobile-xl) and (any-hover: none)
+		@content
+
+@mixin tablet // 768px
+	@media screen and (min-width: $tablet) and (any-hover: hover)
+		@content
+	@media screen and (min-width: $tablet) and (any-hover: none)
+		@content
+
+@mixin tablet-xl // 992px
+	@media screen and (min-width: $tablet-xl) and (any-hover: hover)
+		@content
+	@media screen and (min-width: $tablet-xl) and (any-hover: none)
+		@content
+
+@mixin desktop // 1200px
+	@media screen and (min-width: $desktop) and (any-hover: hover)
+		@content
+
+@mixin desktop-touch // 1200px //TODO нужно ли объединить с desktop?
+	@media screen and (min-width: $desktop) and (any-hover: none)
+		@content
+
+@mixin desktop-l // 1400px
+	@media screen and (min-width: $desktop-l) and (any-hover: hover)
+		@content
+
+@mixin desktop-xl // 1600px
+	@media screen and (min-width: $desktop-xl) and (any-hover: hover)
+		@content
+
+@mixin desktop-xl-wide // 1920px
+	@media screen and (min-width: $desktop-xl-wide) and (any-hover: hover)
+		@content
+
+@mixin desktop-2k // 2500px
+	@media screen and (min-width: $desktop-2k) and (any-hover: hover)
+		@content

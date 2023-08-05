@@ -1,0 +1,32 @@
+{
+	"name": "web",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint . --fix",
+		"format": "prettier --plugin-search-dir . --write .",
+		"sitemap": "npx svelte-sitemap --domain https://tinyboohomecoming.com/ --debug --reset-time --ignore **/error/** --change-freq weekly"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "2.0.1",
+		"@sveltejs/kit": "1.22.4",
+		"eslint": "8.28.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-svelte3": "4.0.0",
+		"prettier": "2.8.0",
+		"prettier-plugin-svelte": "2.8.1",
+		"sass": "1.60.0",
+		"svelte": "3.59.2",
+		"svelte-check": "3.0.1",
+		"svelte-preprocess": "5.0.3",
+		"svelte-sitemap": "2.6.0",
+		"typescript": "4.9.5",
+		"vite": "4.4.8"
+	},
+	"type": "module"
+}
