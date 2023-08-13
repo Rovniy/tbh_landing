@@ -33,9 +33,9 @@
 			<img src="/images/google_play.svg" alt="Tine Boo: Homecoming in Google Play" class="network" loading="lazy" />
 		</a>
 
-<!--		<a href="#" class="external_link" target="_blank" rel="noopener">-->
-<!--			<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network" loading="lazy" />-->
-<!--		</a>-->
+		<a href="#" class="external_link disabled" target="_blank" rel="noopener">
+			<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network" loading="lazy" />
+		</a>
 	</div>
 </main>
 
@@ -118,6 +118,7 @@
 			position: relative
 			z-index: 1
 
+
 			.network
 				width: 100%
 
@@ -144,7 +145,11 @@
 				border-radius: 10px
 				background: linear-gradient(to top, rgba($uicolor_black, 50%), transparent)
 				+desktop
-					content: ''
+					content: none
+
+			&.disabled
+				pointer-events: none
+				opacity: .3
 
 
 .footer
