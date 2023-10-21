@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap')
 
+
 @import "shared/_vars.sass"
 @import "shared/helpers"
 @import "shared/responsive"
+
+@import "typography"
 
 html, body
 	min-height: 100vh
@@ -28,7 +31,7 @@ html
 	color: $uicolor_white
 
 body
-	background: gray
+	background: $uicolor_black
 	position: relative
 	margin: 0
 	+flex_start_column
@@ -41,6 +44,25 @@ body
 
 *
 	box-sizing: border-box
+
+.page
+	width: 100%
+
+
+.wrapper
+	width: 100%
+	max-width: 1100px
+	margin: 0 auto
+	padding: 30px 30px 170px
+	+desktop
+		padding: 30px 30px 60px
+
+	.logo_area
+		text-align: center
+
+		.logotype
+			img
+				max-width: 200px
 
 
 
