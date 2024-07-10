@@ -8,7 +8,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint . --fix",
+		"eslint:fix": "eslint . --fix",
+		"lint": "prettier --plugin-search-dir . --check . && npm run eslint:fix",
 		"format": "prettier --plugin-search-dir . --write .",
 		"sitemap": "npx svelte-sitemap --domain https://tinyboohomecoming.com/ --debug --reset-time --ignore **/error/** --change-freq weekly"
 	},

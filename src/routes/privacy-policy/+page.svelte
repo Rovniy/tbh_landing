@@ -274,7 +274,7 @@
 <Footer add="black"/>
 
 <script>
-import Logo from "../../components/logo.svelte"
+import Logo from '../../components/logo.svelte'
 import Footer from '../../components/footer.svelte'
 </script>
 

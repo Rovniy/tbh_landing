@@ -1,4 +1,6 @@
 <div class="wrapper" on:click={createFireFlies} on:mousemove="{parallax}">
+	<Music />
+
 	<div class="backgrounds">
 		<div class="bg bg_1" bind:this={bg_1}></div>
 		<div class="bg bg_2" bind:this={bg_2}></div>
@@ -33,12 +35,13 @@
 <Footer />
 
 <script lang="ts">
-import Footer from "../components/footer.svelte"
-import Logo from "../components/logo.svelte"
+import Footer from '../components/footer.svelte'
+import Logo from '../components/logo.svelte'
+import Music from '../components/music.svelte'
 
 import '../styles/main.sass'
-import {startFirefly, createFirefly} from '../utils/firefly.js'
-import {onMount} from 'svelte'
+import { startFirefly, createFirefly } from '../utils/firefly.js'
+import { onMount } from 'svelte'
 
 let bg_1, bg_2, bg_3, bg_4, bg_5, canvas,
 	is_mobile = /Mobile|Android|iP(hone|od)/.test(navigator?.userAgent)
@@ -89,10 +92,11 @@ onMount(() => {
 @import "../styles/shared/responsive"
 
 .wrapper
-	padding: 25px 25px 20px
+	padding: 10px
 	+square(100%)
 	+flex_start_column
 	+desktop
+		padding: 25px 25px 20px
 		max-width: 100vw
 		max-height: 100vh
 		position: relative
@@ -171,6 +175,7 @@ onMount(() => {
 		top: 0
 		left: 0
 		+square(100%)
+
 .main
 	+flex_center_column
 	width: 100%
@@ -214,38 +219,14 @@ onMount(() => {
 			max-width: 300px
 			position: relative
 			z-index: 1
-
+			background: rgba(#000, .3)
+			line-height: 0
+			transition: background-color .2s ease-in-out
 
 			.network
 				width: 100%
 
 			&:hover
-				&:before
-					z-index: -1
-					content: ''
-					position: absolute
-					top: 0
-					left: 0
-					bottom: 4px
-					width: 100%
-					border-radius: 10px
-					background: linear-gradient(to top, rgba($uicolor_black, 50%), transparent)
-
-			&:before
-				z-index: -1
-				content: ''
-				position: absolute
-				top: 0
-				left: 0
-				bottom: 4px
-				width: 100%
-				border-radius: 10px
-				background: linear-gradient(to top, rgba($uicolor_black, 50%), transparent)
-				+desktop
-					content: none
-
-			&.disabled
-				pointer-events: none
-				opacity: .3
+				background: rgba(#000, .7)
 </style>
 
