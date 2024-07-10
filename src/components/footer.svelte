@@ -1,7 +1,7 @@
 <footer class="footer {add}">
 	<div class="copyright_area">
 		<img src="/xploit_logo.svg" alt="xploit development" class="xploit" />
-		<span class="copy">Xploit Ltd. All rights reserved. &copy; 2013-2023 </span>
+		<span class="copy">&copy; 2013-{new Date().getFullYear()} Xploit Ltd. All rights reserved.</span>
 	</div>
 
 	<div class="social_area">
@@ -52,7 +52,7 @@ export let add = ''
 		.copy
 			font: bold 14px/14px $main_font_family
 			color: $uicolor_white
-			text-shadow: 2px 2px 2px rgba($uicolor_black, .25)
+			text-shadow: 2px 2px 2px rgba($uicolor_black, .5)
 			text-align: center
 			letter-spacing: 1px
 			+desktop

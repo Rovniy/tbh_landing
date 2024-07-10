@@ -102,11 +102,11 @@
 						display: block
 						width: 10%
 						height: calc(#{$height} / 2)
-						background: linear-gradient(to top, rgba($uicolor_orange, 1), rgba($uicolor_orange, .7))
+						background: linear-gradient(to top, rgba($uicolor_green, 1), rgba($uicolor_green, .7))
 						transform-style: preserve-3d
 						animation: music 1.5s infinite ease-in-out
 						+tablet
-							background: linear-gradient(to top, rgba($uicolor_orange, 1), rgba($uicolor_orange, .7))
+							background: linear-gradient(to top, rgba($uicolor_green, 1), rgba($uicolor_green, .7))
 
 						@for $i from 2 through 10
 							&:nth-of-type(#{$i})
