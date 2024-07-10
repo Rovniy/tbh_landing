@@ -1,7 +1,7 @@
 <main class="page">
 	<div class="wrapper">
 		<div class="logo_area">
-			<Logo/>
+			<Logo />
 		</div>
 
 		<h1>Privacy Policy</h1>
@@ -271,16 +271,14 @@
 	</div>
 </main>
 
-<Footer add="black"/>
+<Footer add="black" />
 
 <script>
-import Logo from '../../components/logo.svelte'
-import Footer from '../../components/footer.svelte'
+	import Logo from '../../components/logo.svelte'
+	import Footer from '../../components/footer.svelte'
 </script>
 
 <style lang="sass">
 	@import "../../styles/shared/_vars.sass"
-	@import "../../styles/shared/helpers"
-	@import "../../styles/shared/responsive"
 </style>
 

@@ -17,8 +17,6 @@ export let add = ''
 
 <style lang="sass">
 @import "../styles/shared/_vars.sass"
-@import "../styles/shared/helpers"
-@import "../styles/shared/responsive"
 
 .footer
 	+flex_start_center_column
@@ -30,20 +28,20 @@ export let add = ''
 	left: 0
 	bottom: 0
 	right: 0
+	+tablet
+		+flex_space_between
 	+desktop
 		flex-grow: 0
 		padding: 0 40px 20px
-		+flex_space_between
-
-	&.black
-		background: $uicolor_black
 
 	.copyright_area
 		width: 100%
 		margin-top: auto
 		+flex_center_column
 		gap: 10px
-		+desktop
+		+landscape
+			+flex_center
+		+tablet
 			+flex_start
 			margin: 0
 			width: auto
@@ -67,7 +65,9 @@ export let add = ''
 		order: -1
 		margin: 0 0 20px 0
 		gap: 8px
-		+desktop
+		+landscape
+			+flex_center
+		+tablet
 			+flex_center
 			order: 0
 			margin: 0
