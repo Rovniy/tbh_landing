@@ -13,6 +13,10 @@
 		</h1>
 
 		<div class="app_links">
+			<!-- TODO replace to correct date -->
+			<h2 class="sub_title">Coming this November...</h2>
+
+			{#if false}
 			<a href="https://play.google.com/store/apps/details?id=com.Ravy.TinyBooHomecoming" class="external_link"
 			   target="_blank" rel="noopener">
 				<img src="/images/google_play.svg" alt="Tine Boo: Homecoming in Google Play" class="network"
@@ -23,6 +27,7 @@
 				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
 					 loading="lazy" />
 			</a>
+			{/if}
 		</div>
 	</main>
 </div>
@@ -104,6 +109,14 @@
 			+desktop
 				gap: 60px
 				margin: 40px 0 0 0
+
+			.sub_title
+				font: bold 18px/24px $main_font_family
+				color: $uicolor_white
+				text-shadow: 2px 2px 2px rgba($uicolor_black, .25)
+				text-align: center
+				+desktop
+					font: bold 32px/38px $main_font_family
 
 			.external_link
 				border-radius: 10px
