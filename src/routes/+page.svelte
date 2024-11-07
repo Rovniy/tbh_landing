@@ -13,20 +13,17 @@
 		</h1>
 
 		<div class="app_links">
-			<!-- TODO replace to correct date -->
-			<h2 class="sub_title">Coming this November...</h2>
-
-			{#if false}
 			<a href="https://play.google.com/store/apps/details?id=com.Ravy.TinyBooHomecoming" class="external_link"
 			   target="_blank" rel="noopener">
 				<img src="/images/google_play.svg" alt="Tine Boo: Homecoming in Google Play" class="network"
 					 loading="lazy" />
 			</a>
 
-			<a href="#" class="external_link disabled" target="_blank" rel="noopener">
-				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
-					 loading="lazy" />
-			</a>
+			{#if false}
+				<a href="#" class="external_link disabled" target="_blank" rel="noopener">
+					<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
+						 loading="lazy" />
+				</a>
 			{/if}
 		</div>
 	</main>
