@@ -290,3 +290,4 @@ yieldlab.net,2172218,RESELLER
 bigo.sg,1112518,reseller
 yandex.com,302446435,reseller
 applovin.com,a97e4a2a60836795b8e1433cefd17f30,RESELLER
+google.com, pub-8119125760759029, DIRECT, f08c47fec0942fa0
