@@ -1,3 +1,20 @@
+<!-- Preloader -->
+<div class="preloader">
+	<div class="firefly">
+		<div class="head"></div>
+		<div class="wing left"></div>
+		<div class="wing right"></div>
+		<div class="glow"></div>
+		<div class="shadow"></div>
+	</div>
+
+	<span class="loading_title">Loading...</span>
+	<div class="progress_bar">
+		<div class="progress"></div>
+	</div>
+</div>
+<!-- End Preloader -->
+
 <div class="wrapper" on:click={createFireFlies} on:mousemove="{parallax}">
 	<Music />
 
