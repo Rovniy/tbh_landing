@@ -11,7 +11,8 @@
 		"eslint:fix": "eslint . --fix",
 		"lint": "prettier --plugin-search-dir . --check . && npm run eslint:fix",
 		"format": "prettier --plugin-search-dir . --write .",
-		"sitemap": "npx svelte-sitemap --domain https://tinyboohomecoming.com/ --debug --reset-time --ignore **/error/** --change-freq weekly"
+		"sitemap": "npx svelte-sitemap --domain https://tinyboohomecoming.com/ --debug --reset-time --ignore **/error/** --change-freq weekly",
+		"deploy:hosting": "firebase deploy"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "2.0.1",
