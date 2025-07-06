@@ -8,8 +8,7 @@
 
 	<div class="social_area">
 		<a href="/privacy-policy" class="privacy">Privacy Policy</a>
-		<a href="https://ravy.pro/projects/boo-stories/" class="privacy" target="_blank">Developer website</a>
-		<a href="https://x.com/xploitltd" class="privacy" target="_blank">Twitter (X)</a>
+		<a href="https://ravy.pro/categories/tiny-boo" class="privacy" target="_blank">Developer website</a>
 	</div>
 </footer>
 

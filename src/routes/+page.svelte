@@ -26,7 +26,7 @@
 		<Logo />
 
 		<h1 class="title">
-			Join Boo in mobile game on an exciting adventure through a dangerous forest!
+			A tiny hero. A wild forest.<br />Your story begins now.
 		</h1>
 
 		<div class="app_links">
@@ -36,12 +36,10 @@
 					 loading="lazy" />
 			</a>
 
-			{#if false}
-				<a href="#" class="external_link disabled" target="_blank" rel="noopener">
-					<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
-						 loading="lazy" />
-				</a>
-			{/if}
+<!--			<a href="#" class="external_link disabled" target="_blank" rel="noopener">-->
+<!--				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"-->
+<!--					 loading="lazy" />-->
+<!--			</a>-->
 		</div>
 	</main>
 </div>
@@ -50,12 +48,10 @@
 
 <script lang="ts">
 	import '../styles/main.sass'
-
 	import Footer from '../components/footer.svelte'
 	import Logo from '../components/logo.svelte'
 	import Music from '../components/music.svelte'
 	import Backgrounds from '../components/backgrounds.svelte'
-
 	import { createFirefly, startFirefly } from '../utils/firefly.js'
 	import { onMount } from 'svelte'
 
@@ -68,9 +64,7 @@
 		mouseY = event.clientY
 	}
 
-	onMount(() => {
-		startFirefly(canvas)
-	})
+	onMount(() => startFirefly(canvas))
 </script>
 
 <style lang="sass">
@@ -96,7 +90,7 @@
 	.main
 		+flex_start_center_column
 		width: 100%
-		margin: auto
+		margin: 100px auto 0
 		position: relative
 		+landscape
 			margin: 0 auto
@@ -106,7 +100,7 @@
 			+flex_center_column
 
 		.title
-			margin: 20px 0 0 0
+			margin: 0
 			font: bold 24px/28px $main_font_family
 			color: $uicolor_white
 			text-shadow: 2px 2px 2px rgba($uicolor_black, .25)
@@ -114,13 +108,14 @@
 			+desktop
 				max-width: 800px
 				font: bold 44px/52px $main_font_family
-				margin: 40px 0 0 0
+				margin: 0
 
 		.app_links
 			margin: 15px 0 0 0
-			+flex_center
-			gap: 40px
+			+flex_center_column
+			gap: 10px
 			+desktop
+				+flex_center
 				gap: 60px
 				margin: 40px 0 0 0
 
@@ -137,7 +132,7 @@
 				max-width: 300px
 				position: relative
 				z-index: 1
-				background: rgba(#000, .3)
+				background: rgba(#000, .7)
 				line-height: 0
 				transition: background-color .2s ease-in-out
 
@@ -145,6 +140,6 @@
 					width: 100%
 
 				&:hover
-					background: rgba(#000, .7)
+					background: rgba(#000, .9)
 </style>
 

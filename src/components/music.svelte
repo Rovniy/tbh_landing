@@ -102,11 +102,11 @@
 						display: block
 						width: 10%
 						height: calc(#{$height} / 2)
-						background: linear-gradient(to top, rgba($uicolor_green, 1), rgba($uicolor_green, .7))
+						background: linear-gradient(to top, rgba($uicolor_white, 1), rgba($uicolor_white, .7))
 						transform-style: preserve-3d
 						animation: music 1.5s infinite ease-in-out
 						+tablet
-							background: linear-gradient(to top, rgba($uicolor_green, 1), rgba($uicolor_green, .7))
+							background: linear-gradient(to top, rgba($uicolor_white, 1), rgba($uicolor_white, .7))
 
 						@for $i from 2 through 10
 							&:nth-of-type(#{$i})
@@ -122,13 +122,13 @@
 				.title
 					font: 600 16px/14px $main_font_family
 					color: $uicolor_white
-					text-shadow: 2px 2px 2px rgba($uicolor_black, .5)
+					text-shadow: 2px 2px 2px rgba($uicolor_black, .7)
 					letter-spacing: 1px
 
 				.author
 					font: 400 16px/14px $main_font_family
 					color: $uicolor_white
-					text-shadow: 2px 2px 2px rgba($uicolor_black, .5)
+					text-shadow: 2px 2px 2px rgba($uicolor_black, .7)
 					letter-spacing: 1px
 
 		.right_area
