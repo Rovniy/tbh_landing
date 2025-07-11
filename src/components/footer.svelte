@@ -7,6 +7,7 @@
 	</div>
 
 	<div class="social_area">
+		<a href="/support" class="privacy">Support</a>
 		<a href="/privacy-policy" class="privacy">Privacy Policy</a>
 		<a href="https://ravy.pro/categories/tiny-boo" class="privacy" target="_blank">Developer website</a>
 	</div>

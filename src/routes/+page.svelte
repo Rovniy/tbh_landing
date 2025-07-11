@@ -15,7 +15,7 @@
 </div>
 <!-- End Preloader -->
 
-<div class="wrapper" on:click={createFireFlies} on:mousemove="{parallax}">
+<div class="wrapper" on:click={createFireFlies} on:mousemove="{parallax}" on:keypress={() => {}}>
 	<Music />
 
 	<Backgrounds {mouseX} {mouseY} />
