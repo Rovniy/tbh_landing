@@ -24,15 +24,15 @@ export let add = ''
 	+flex_start_center_column
 	width: 100%
 	margin-top: auto
-	padding: 0 10px 10px
-	z-index: 1
-	position: fixed
-	left: 0
-	bottom: 0
-	right: 0
+	padding: 10px
 	+tablet
 		+flex_space_between
 	+desktop
+		z-index: 1
+		position: fixed
+		left: 0
+		bottom: 0
+		right: 0
 		flex-grow: 0
 		padding: 0 40px 20px
 

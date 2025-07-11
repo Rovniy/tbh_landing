@@ -71,14 +71,14 @@
 	@import "../styles/shared/_vars.sass"
 
 	.wrapper
-		padding: 10px
+		padding: 10px 10px 50px
+		position: relative
 		+square(100%)
 		+flex_start_column
 		+desktop
 			padding: 25px 25px 20px
 			max-width: 100vw
 			max-height: 100vh
-			position: relative
 			overflow: hidden
 
 		.canvas
