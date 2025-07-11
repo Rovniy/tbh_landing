@@ -36,10 +36,10 @@
 					 loading="lazy" />
 			</a>
 
-<!--			<a href="#" class="external_link disabled" target="_blank" rel="noopener">-->
-<!--				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"-->
-<!--					 loading="lazy" />-->
-<!--			</a>-->
+			<a href="#" class="external_link disabled" target="_blank" rel="noopener">
+				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
+					 loading="lazy" />
+			</a>
 		</div>
 	</main>
 </div>
@@ -141,5 +141,11 @@
 
 				&:hover
 					background: rgba(#000, .9)
+
+				&.disabled
+					opacity: .5
+					pointer-events: none
+					cursor: default
+					transition: none
 </style>
 
