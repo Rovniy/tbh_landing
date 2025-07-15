@@ -36,7 +36,7 @@
 					 loading="lazy" />
 			</a>
 
-			<a href="#" class="external_link disabled" target="_blank" rel="noopener">
+			<a href="https://apps.apple.com/ae/app/tiny-boo-homecoming/id6476441950" class="external_link" target="_blank" rel="noopener">
 				<img src="/images/apple_store.svg" alt="Tine Boo: Homecoming in Apple Store" class="network"
 					 loading="lazy" />
 			</a>
