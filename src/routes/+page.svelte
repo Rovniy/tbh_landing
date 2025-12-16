@@ -76,9 +76,10 @@
 	.wrapper
 		padding: 10px 10px 50px
 		position: relative
-		+square(100%)
+		width: 100%
 		+flex_start_column
 		+desktop
+			+square(100%)
 			padding: 25px 25px 20px
 			max-width: 100vw
 			max-height: 100vh
