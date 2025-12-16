@@ -41,6 +41,8 @@
 					 loading="lazy" />
 			</a>
 		</div>
+
+		<VideoPLayer />
 	</main>
 </div>
 
@@ -51,6 +53,7 @@
 	import Footer from '../components/footer.svelte'
 	import Logo from '../components/logo.svelte'
 	import Music from '../components/music.svelte'
+	import VideoPLayer from '../components/video.svelte'
 	import Backgrounds from '../components/backgrounds.svelte'
 	import { createFirefly, startFirefly } from '../utils/firefly.js'
 	import { onMount } from 'svelte'
@@ -103,7 +106,7 @@
 			margin: 0
 			font: bold 24px/28px $main_font_family
 			color: $uicolor_white
-			text-shadow: 2px 2px 2px rgba($uicolor_black, .25)
+			text-shadow: 2px 2px 2px rgba($uicolor_black, .5)
 			text-align: center
 			+desktop
 				max-width: 800px
@@ -116,7 +119,7 @@
 			gap: 10px
 			+desktop
 				+flex_center
-				gap: 60px
+				gap: 20px
 				margin: 40px 0 0 0
 
 			.sub_title
@@ -132,7 +135,7 @@
 				max-width: 300px
 				position: relative
 				z-index: 1
-				background: rgba(#000, .7)
+				background: rgba(#000, .5)
 				line-height: 0
 				transition: background-color .2s ease-in-out
 

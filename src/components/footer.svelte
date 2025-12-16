@@ -1,15 +1,14 @@
 <footer class="footer {add}">
 	<div class="copyright_area">
-		<a href="https://xploit.ltd/" class="developer_link">
+		<a href="https://xploit.games/" class="developer_link">
 			<img src="/xploit_logo.svg" alt="xploit development" class="xploit" />
-			<span class="copy">&copy; 2013-{new Date().getFullYear()} Xploit Ltd. All rights reserved.</span>
+			<span class="copy">&copy; 2013-{new Date().getFullYear()} XPLOIT. All rights reserved.</span>
 		</a>
 	</div>
 
 	<div class="social_area">
 		<a href="/support" class="privacy">Support</a>
 		<a href="/privacy-policy" class="privacy">Privacy Policy</a>
-		<a href="https://ravy.pro/categories/tiny-boo" class="privacy" target="_blank">Developer website</a>
 	</div>
 </footer>
 
