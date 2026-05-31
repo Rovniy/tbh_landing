@@ -57,6 +57,8 @@
 		padding: $padding
 		+flex_center
 		z-index: 10
+		+desktop
+			position: fixed
 
 		.left_area
 			+flex_center_start

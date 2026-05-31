@@ -112,6 +112,7 @@ onMount(() => {
 	overflow: hidden
 	+desktop
 		overflow: visible
+		position: fixed
 
 	&:after
 		content: ''

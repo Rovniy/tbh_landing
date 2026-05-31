@@ -43,6 +43,13 @@
 		</div>
 
 		<VideoPLayer />
+
+		<a href="https://www.youtube.com/@TinyBooLumia" class="youtube_banner"
+		   target="_blank" rel="noopener">
+			<img src="/images/youtube_banner.webp" alt="Tiny Boo: Homecoming on YouTube"
+				 class="banner_image" width="1000" height="300" loading="lazy" />
+			<span class="banner_text">The cartoon is coming!</span>
+		</a>
 	</main>
 </div>
 
@@ -79,17 +86,17 @@
 		width: 100%
 		+flex_start_column
 		+desktop
-			+square(100%)
-			padding: 25px 25px 20px
-			max-width: 100vw
-			max-height: 100vh
-			overflow: hidden
+			width: 100%
+			min-height: 100vh
+			padding: 25px 25px 80px
 
 		.canvas
 			position: absolute
 			top: 0
 			left: 0
 			+square(100%)
+			+desktop
+				position: fixed
 
 	.main
 		+flex_start_center_column
@@ -102,6 +109,7 @@
 			margin: auto
 		+desktop
 			+flex_center_column
+			padding: 100px 0
 
 		.title
 			margin: 0
@@ -151,5 +159,51 @@
 					pointer-events: none
 					cursor: default
 					transition: none
+
+		.youtube_banner
+			display: block
+			width: 100%
+			max-width: 1000px
+			margin: 15px 0 0 0
+			border-radius: 10px
+			overflow: hidden
+			position: relative
+			z-index: 1
+			line-height: 0
+			box-shadow: 0 6px 20px rgba($uicolor_black, .35)
+			transition: box-shadow .5s cubic-bezier(.2, .8, .2, 1)
+			+desktop
+				margin: 40px 0 0 0
+
+			.banner_image
+				width: 100%
+				height: auto
+				display: block
+				transform-origin: center
+				transition: transform .5s cubic-bezier(.2, .8, .2, 1)
+				will-change: transform
+
+			.banner_text
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				width: 66.6666%
+				+flex_center
+				padding: 0 5%
+				font: bold 20px/24px $main_font_family
+				color: $uicolor_white
+				text-align: center
+				text-shadow: 2px 2px 4px rgba($uicolor_black, .6)
+				+tablet
+					font: bold 32px/38px $main_font_family
+				+desktop
+					font: bold 54px/54px $main_font_family
+
+			&:hover
+				box-shadow: 0 14px 40px rgba($uicolor_black, .55)
+
+				.banner_image
+					transform: scale(1.06)
 </style>
 
